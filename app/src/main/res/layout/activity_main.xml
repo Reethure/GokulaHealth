@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- APP TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gokula Health"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#4CAF50"
+            android:layout_gravity="center"
+            android:paddingBottom="25dp"/>
+
+        <!-- PHOTO -->
+
+        <ImageView
+            android:id="@+id/cowPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_cow"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/selectPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Cow Photo"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- CATTLE SECTION -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cattle Registration"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/cowName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cow Name"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/cowId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cow ID"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/addCow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Cow"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="12dp"/>
+
+        <!-- MILK SECTION -->
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_milk"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milk Production"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/morningMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Morning Milk (Litres)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/eveningMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Evening Milk (Litres)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/saveMilk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Milk Data"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="12dp"/>
+
+        <!-- GRAPH -->
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/milkChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- VACCINATION -->
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_medical"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccination Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <EditText
+            android:id="@+id/vaccinationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vaccination Date"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/saveVaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Vaccination"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="12dp"/>
+
+        <!-- DASHBOARD BUTTON -->
+
+        <Button
+            android:id="@+id/openDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Dashboard"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="20dp"/>
+
+        <!-- RESULT -->
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:padding="15dp"
+            android:background="#C8E6C9"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
