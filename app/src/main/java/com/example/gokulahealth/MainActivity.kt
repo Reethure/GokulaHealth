@@ -271,7 +271,7 @@ class MainActivity : AppCompatActivity() {
                     )
 
                 val alarmManager =
-                    getSystemService(ALARM_SERVICE) as AlarmManager
+                    getSystemService(ALARM_SERVICE) as AlarmManager // AlarmManager vaccination reminder
 
                 val calendar = Calendar.getInstance()
 
