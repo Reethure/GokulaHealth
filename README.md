@@ -35,3 +35,17 @@ Gokula Health is an offline Android application developed using Kotlin and Andro
 
 ## Conclusion
 The application helps farmers digitally manage cattle and milk production efficiently through a simple offline Android system.
+
+## Screenshots
+
+### Home Screen
+![Home Screen](home_screen.png)
+
+### Graph Screen
+![Graph](graph_screen.png)
+
+### Dashboard
+![Dashboard](dashboard.png)
+
+### Notification
+![Notification](notification.png)
