@@ -199,7 +199,7 @@ class MainActivity : AppCompatActivity() {
                 averageMilk
             )
 
-            editor.apply()
+            editor.apply() // MPAndroidChart graph visualization
 
             milkData =
                 "Morning Milk: $morning L\n" +
