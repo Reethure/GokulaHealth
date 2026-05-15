@@ -171,7 +171,7 @@ class MainActivity : AppCompatActivity() {
 
         // SAVE MILK
 
-        saveMilk.setOnClickListener {
+        saveMilk.setOnClickListener { // Milk calculation feature
 
             val morning =
                 morningMilk.text.toString()
